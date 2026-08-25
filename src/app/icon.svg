@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gérard Fauré">
+  <rect width="64" height="64" rx="3" fill="#0B0B0B"/>
+  <!-- A deliberately uncomplicated GF monogram: it stays identifiable in a
+       16px browser tab, unlike a portrait or a detailed signature. -->
+  <text
+    x="32"
+    y="41"
+    fill="#F2ECE1"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="31"
+    letter-spacing="-2.6"
+    text-anchor="middle"
+  >GF</text>
+  <path d="M14 52h36" stroke="#C9A465" stroke-width="2"/>
+</svg>

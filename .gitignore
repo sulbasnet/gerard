@@ -1,0 +1,51 @@
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.*
+
+# Next.js and build output
+/.next/
+/out/
+/dist/
+/build/
+/coverage/
+/.open-next/
+
+# Cloudflare and Wrangler local state
+/.wrangler/
+/.dev.vars
+/.dev.vars.*
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript generated files
+*.tsbuildinfo
+next-env.d.ts
+
+# Deployment metadata
+/.vercel/
+
+# Local editor, agent, and OS files
+/.vscode/
+/.idea/
+/.claude/
+/.codex/
+/.agents/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Private certificates and keys
+*.pem
+*.key

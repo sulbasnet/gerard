@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Gérard Fauré — Writer, witness",
+    "description": "Born in Fez, Morocco, in 1946, Gérard Fauré is a French essayist and author."
+  },
+  "nav": {
+    "home": "Home",
+    "author": "The Author",
+    "books": "Books",
+    "videos": "Videos",
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "eyebrow": "Writer · Witness · The story of an era",
+    "firstName": "Gérard",
+    "lastName": "Fauré",
+    "tagline": "Born in Fez in 1946, Gérard Fauré is a French essayist and the author of accounts of an era.",
+    "primaryCta": "Discover his story",
+    "secondaryCta": "View his books",
+    "scroll": "Discover",
+    "portraitAlt": "Portrait of Gérard Fauré"
+  },
+  "books": {
+    "eyebrow": "His books",
+    "headline": "Stories drawn from a life out of the ordinary.",
+    "link": "View all books",
+    "readMore": "Read more",
+    "inFrench": "Book in French",
+    "coverAlt": "Cover of {title}"
+  },
+  "about": {
+    "eyebrow": "About",
+    "headline": "A life out of the ordinary.",
+    "body": "A writer and privileged witness, Gérard Fauré has moved through worlds few ever see, and drawn from them accounts that are raw, honest and unflinching.",
+    "link": "Learn more",
+    "photoAlt": "Portrait of Gérard Fauré"
+  },
+  "timeline": {
+    "title": "One life, several eras",
+    "link": "Explore the full story",
+    "items": [
+      { "label": "Fez", "text": "Born in Fez, Morocco, in 1946." },
+      { "label": "The 1970s", "text": "Paris, the beginnings and the encounters." },
+      { "label": "Le Tout-Paris", "text": "At the heart of the nights, the worlds and the secrets." },
+      { "label": "The 1980s", "text": "An era of its own." },
+      { "label": "The Writer", "text": "The need to write and to bear witness." }
+    ]
+  },
+  "videos": {
+    "title": "Latest videos",
+    "link": "View all videos",
+    "channelLink": "Visit the official channel",
+    "channelTeaser": "Interviews, broadcasts and new appearances are available on Gérard Fauré’s official YouTube channel.",
+    "play": "Play video: {title}",
+    "close": "Close video"
+  },
+  "newsletter": {
+    "title": "Receive news from Gérard Fauré",
+    "subtitle": "New releases, videos, interviews and exclusives.",
+    "placeholder": "Your email address",
+    "emailLabel": "Email address",
+    "button": "Subscribe",
+    "consentBefore": "By subscribing, you accept our ",
+    "consentLink": "Privacy Policy",
+    "consentAfter": "."
+  },
+  "footer": {
+    "tagline": "Writer · Witness · The story of an era",
+    "navigation": "Navigation",
+    "information": "Information",
+    "languages": "Languages",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "quote": "I saw it, I lived it, I write so as not to forget.",
+    "quoteAuthor": "Gérard Fauré",
+    "rights": "All rights reserved."
+  },
+  "pages": {
+    "author": {
+      "title": "The Author",
+      "lead": "Born in Fez, Morocco, in 1946, Gérard Fauré is a French author whose autobiographical accounts revisit his Moroccan youth and the Parisian circles of the 1970s and 1980s.",
+      "body": [
+        "Dealer du Tout-Paris: Le fournisseur des stars parle, written in collaboration with Ange Peltereau and published by Nouveau Monde Éditions in 2018, opened this autobiographical cycle.",
+        "Le Prince de la coke followed in 2020. L’Éducation d’un voyou, published in 2021, returned to his beginnings and Moroccan youth.",
+        "He continues this work of testimony through his books and recorded interviews."
+      ],
+      "archiveTitle": "Archive",
+      "archiveCaptions": ["Early portrait", "Archival identity portrait", "Gérard Fauré during an interview", "Contemporary portrait"],
+      "archiveOpen": "Open {caption}",
+      "archiveClose": "Close archive image",
+      "archivePrevious": "Previous archive image",
+      "archiveNext": "Next archive image",
+      "timelineTitle": "One life, several eras",
+      "pressTitle": "Selected coverage",
+      "booksTitle": "His books",
+      "nextEyebrow": "Continue reading",
+      "nextTitle": "Three books, one remarkable trajectory.",
+      "nextCta": "Explore all books"
+    },
+    "books": {
+      "title": "Books",
+      "lead": "Stories drawn from a life out of the ordinary.",
+      "readingPathTitle": "A chronological reading path",
+      "readingPathLead": "Follow the story in chronological order: the beginnings, the Paris years, then the continuation.",
+      "readingStep": "Book {number}",
+      "synopsis": "Synopsis",
+      "details": "Details",
+      "publisher": "Publisher",
+      "isbn": "ISBN",
+      "year": "Year",
+      "pages": "Pages",
+      "language": "Language",
+      "languageValue": "French",
+      "bibliographicSource": "Bibliographic source",
+      "buyTitle": "Buying options",
+      "buyBody": "Choose a trusted seller to purchase this title.",
+      "buyFrom": "Buy from {seller}",
+      "others": "Other books",
+      "backToBooks": "All books",
+      "bookNavigation": "Chronological book navigation",
+      "previousBook": "Previous book",
+      "nextBook": "Next book",
+      "nextEyebrow": "Continue the story",
+      "nextTitle": "Hear Gérard tell it in his own words.",
+      "nextCta": "Watch the interviews"
+    },
+    "videos": {
+      "title": "Videos",
+      "lead": "Interviews, broadcasts and stories on film.",
+      "channelEyebrow": "Official channel",
+      "channelTitle": "Watch Gérard Fauré on YouTube",
+      "channelBody": "Discover interviews, broadcasts and new video appearances on Gérard Fauré’s official YouTube channel.",
+      "channelCta": "Visit the YouTube channel",
+      "pressTitle": "Selected press & radio",
+      "nextEyebrow": "Behind the conversations",
+      "nextTitle": "Discover the life and books behind the interviews.",
+      "nextCta": "Read his story"
+    },
+    "contact": {
+      "title": "Contact",
+      "lead": "Press, signings, or simply a word from a reader.",
+      "name": "Name",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message",
+      "subjectPress": "Press",
+      "subjectEvent": "Signing or event",
+      "subjectReader": "Reader message",
+      "subjectOther": "Other",
+      "consentBefore": "I agree that my data may be used to answer my enquiry, in accordance with the ",
+      "consentLink": "Privacy Policy",
+      "consentAfter": ".",
+      "send": "Send",
+      "sending": "Sending…",
+      "sent": "Thank you. Your message has been sent.",
+      "error": "Your message could not be sent. Please try again or email",
+      "directTitle": "Direct contacts",
+      "pressLabel": "Press",
+      "generalLabel": "General",
+      "socialLabel": "Social",
+      "readerNote": "Every message is read. Please allow up to five business days for a reply.",
+      "nextEyebrow": "Prefer email?",
+      "nextTitle": "Write directly for a simple, personal enquiry.",
+      "nextCta": "Email Gérard Fauré"
+    },
+    "legal": {
+      "title": "Legal notice",
+      "sections": [
+        { "heading": "Site publisher", "body": "Gérard Fauré is the publisher of this website. Contact: hello@gerardfaure.fr." },
+        { "heading": "Publication director", "body": "Gérard Fauré." },
+        { "heading": "Hosting", "body": "Cloudflare, Inc. — 101 Townsend St., San Francisco, CA 94107, United States — +1 (650) 319-8930." },
+        { "heading": "Intellectual property", "body": "All text, photographs and visual material on this site is protected. Reproduction without permission is prohibited. Book covers remain the property of their publishers, and photographs that of their authors." }
+      ]
+    },
+    "privacy": {
+      "__TODO": "Have this reviewed before launch, particularly the email provider and the retention period.",
+      "title": "Privacy policy",
+      "sections": [
+        { "heading": "Data controller", "body": "Gérard Fauré is responsible for the processing of personal data collected through this website. For privacy enquiries: hello@gerardfaure.fr." },
+        { "heading": "Data collected", "body": "This site collects only the data you provide voluntarily: your email address if you subscribe to the newsletter, and the information entered in the contact form." },
+        { "heading": "Use", "body": "Messages sent through the form are used only to answer your enquiry. The information is transmitted through Resend, the site’s transactional email provider, solely for delivery. No data is sold or used for advertising." },
+        { "heading": "Cookies", "body": "This site uses no advertising cookies and no third-party trackers. Audience measurement is carried out without cookies and without personally identifying data." },
+        { "heading": "Videos", "body": "YouTube videos load only at the moment you click to play them. Until you start a video, no data is sent to YouTube." },
+        { "heading": "Your rights", "body": "You may at any time request access to, correction of, or deletion of your data, or unsubscribe from the newsletter using the link in every email. For any request: hello@gerardfaure.fr." }
+      ]
+    }
+  }
+}

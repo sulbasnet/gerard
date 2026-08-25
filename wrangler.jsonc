@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // This must match the Worker name configured in Cloudflare Workers Builds.
+  // OpenNext uses it for its self-reference service binding.
+  "name": "gerard",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-08-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  // Binds the Worker to the real domain. Without this, a successful
+  // `wrangler deploy` is only reachable at *.workers.dev — never at
+  // gerardfaure.fr. `custom_domain: true` also provisions the DNS record
+  // and certificate automatically, since gerardfaure.fr's nameservers
+  // already point at Cloudflare but currently have no record at all.
+  "routes": [
+    { "pattern": "gerardfaure.fr", "custom_domain": true },
+    { "pattern": "www.gerardfaure.fr", "custom_domain": true }
+  ],
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "gerard"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

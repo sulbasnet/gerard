@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+<defs><radialGradient id="g" cx="50%" cy="42%" r="70%">
+<stop offset="0%" stop-color="#122544"/><stop offset="100%" stop-color="#060A14"/>
+</radialGradient></defs>
+<rect width="400" height="600" fill="url(#g)"/>
+<text x="200" y="150" fill="#F2ECE1" font-family="Georgia,serif" font-size="38" text-anchor="middle" letter-spacing="1">LE PRINCE</text>
+<text x="200" y="196" fill="#F2ECE1" font-family="Georgia,serif" font-size="30" text-anchor="middle" letter-spacing="1">DE LA COKE</text>
+<rect x="170" y="228" width="60" height="1.5" fill="#C9A465"/>
+<text x="200" y="545" fill="#C9A465" font-family="Georgia,serif" font-size="17" text-anchor="middle" letter-spacing="3">GERARD FAURE</text>
+</svg>
