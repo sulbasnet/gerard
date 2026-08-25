@@ -152,7 +152,7 @@ export default function BookDetailPage({
                       alt={dict.books.coverAlt.replace('{title}', o.title)}
                       width={1000}
                       height={1500}
-                      sizes="(max-width: 599px) min(56vw, 220px), 230px"
+                      sizes="(max-width: 599px) 300px, 230px"
                     />
                   </div>
                   <h3 className="t-card book-card__title">{o.title}</h3>

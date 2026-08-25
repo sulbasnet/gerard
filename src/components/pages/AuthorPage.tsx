@@ -101,7 +101,7 @@ export default function AuthorPage({ locale, dict }: { locale: Locale; dict: Dic
                       alt={dict.books.coverAlt.replace('{title}', book.title)}
                       width={1000}
                       height={1500}
-                      sizes="(max-width: 599px) min(56vw, 220px), 200px"
+                      sizes="(max-width: 599px) 300px, 200px"
                     />
                   </div>
                   <div className="book-card__meta t-meta">{book.year}</div>

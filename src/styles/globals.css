@@ -509,7 +509,7 @@ select, textarea { font: inherit; }
 /* The subject is centred in the source frame. Insetting the media layer from
    the left on desktop moves him to the right of the headline instead of
    behind it, and gives object-fit room to crop rather than squash. */
-.hero__media { position: absolute; inset: 0; }
+.hero__media { position: absolute; inset: 0; background: var(--bg); }
 @media (min-width: 900px) {
   .hero__media {
     left: 30%;
@@ -549,6 +549,7 @@ select, textarea { font: inherit; }
 .hero__scrim {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     /* 1. Top band — carries the navigation. The wall behind it is bright now,
           so this is what keeps the cream nav links readable. */
@@ -629,7 +630,10 @@ select, textarea { font: inherit; }
 
   .hero__scrim {
     bottom: auto;
-    height: 46dvh;
+    /* Overlap the image zone by two physical pixels. This avoids the pale
+       anti-aliased seam that can appear where the filtered image and the
+       solid reading field meet on high-density mobile screens. */
+    height: calc(46dvh + 2px);
     background:
       linear-gradient(180deg,
         rgba(11,11,11,0.82) 0%,
@@ -639,6 +643,15 @@ select, textarea { font: inherit; }
   }
 
   .hero__content { padding-top: calc(46dvh + var(--s-6)); }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(100%, 340px);
+    gap: var(--s-3);
+  }
+  .hero__actions .btn--primary { width: 100%; }
+  .hero__actions .btn--ghost { padding: 14px 24px; }
 }
 
 /* ---------- 10. Books band ---------- */
@@ -945,9 +958,24 @@ select, textarea { font: inherit; }
 .newsletter__input:focus { outline: none; border-color: var(--gold); }
 .newsletter__form:focus-within .newsletter__input { border-color: var(--gold); }
 
-@media (max-width: 460px) {
+@media (max-width: 599px) {
+  /* A column flexbox otherwise treats the input's 220px flex basis as its
+     vertical size. An email address needs a compact single-line control. */
   .newsletter__form { flex-direction: column; }
-  .newsletter__input { border-right: 1px solid var(--border-strong); border-bottom: 0; }
+  .newsletter__input {
+    flex: none;
+    width: 100%;
+    min-height: 58px;
+    padding: 14px 18px;
+    border-right: 1px solid var(--border-strong);
+    border-bottom: 0;
+  }
+  .newsletter__form .btn {
+    width: 100%;
+    min-height: 58px;
+    padding: 14px 24px;
+  }
+  .newsletter__sub { margin-bottom: var(--s-5); }
 }
 
 .newsletter__consent {
@@ -1738,7 +1766,18 @@ select, textarea { font: inherit; }
 .author__archive--sofa img { object-position: 50% 40%; }
 .author__archive--studio img { object-position: 50% 26%; }
 @media (max-width: 599px) {
-  .author__media { justify-self: start; }
+  /* Keep the introduction photographic without asking a phone reader to
+     scroll through an almost full-screen portrait before reaching the copy. */
+  .about__media {
+    height: min(60svh, 480px);
+    aspect-ratio: auto;
+  }
+  .about__body { padding-block: var(--s-7); }
+
+  /* The biography reads left-aligned, but its portrait is a standalone
+     editorial object on a phone. Centre it to avoid an accidental empty
+     column on the right. */
+  .author__media { justify-self: center; }
   .author__archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); }
   .author__archive { aspect-ratio: 1 / 1; }
 }
@@ -1781,31 +1820,22 @@ select, textarea { font: inherit; }
 }
 .footer__list li + li { margin-top: var(--s-3); }
 
-/* --- 28.2 Books strip on phones -----------------------------
-   Three covers across a 320-430px screen rendered them 80-117px
-   wide — too small to read a title or judge a jacket. Below 600px
-   they become a swipeable row at a legible size, which is the
-   behaviour the spec already called for on mobile. */
+/* --- 28.2 Books on phones -----------------------------------
+   A three-title catalogue does not need a carousel. The previous
+   horizontal strip cropped the next cover against the viewport edge,
+   making the cards feel cramped. Keep every cover, its context and
+   its link together in a single editorial column instead. */
 
 @media (max-width: 599px) {
   .books__covers {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: min(100%, 300px);
+    margin-inline: auto;
     gap: var(--s-4);
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    /* bleed to the screen edges so the row reads as continuous */
-    margin-inline: calc(var(--gutter) * -1);
-    padding-inline: var(--gutter);
-    padding-bottom: var(--s-2);
   }
-  .books__covers::-webkit-scrollbar { display: none; }
-  .books__covers > * {
-    flex: 0 0 min(56vw, 220px);
-    scroll-snap-align: start;
-  }
+  .books__covers > .reveal,
+  .books__covers .book-card { min-width: 0; width: 100%; }
 }
 
 /* --- 28.3 Videos column ------------------------------------

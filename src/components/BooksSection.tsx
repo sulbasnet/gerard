@@ -30,7 +30,7 @@ export default function BooksSection({ locale, dict }: { locale: Locale; dict: D
                     alt={dict.books.coverAlt.replace('{title}', book.title)}
                     width={1000}
                     height={1500}
-                    sizes="(max-width: 599px) min(56vw, 220px), (max-width: 899px) 33vw, 28vw"
+                    sizes="(max-width: 599px) 300px, (max-width: 899px) 33vw, 28vw"
                   />
                 </div>
                 {/* `inFrench` is deliberately empty in fr.json — a French
